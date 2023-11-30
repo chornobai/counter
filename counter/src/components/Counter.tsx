@@ -3,9 +3,11 @@ import useSound from 'use-sound';
 import s from "./Counter.module.css"
 import { useState } from 'react';
 import btn from './../btn.mp3';
+import resetbtn from './../reset.mp3';
 const Counter = (props:any)=> {
     let [count, setCount]=useState(0);
     let [play] = useSound(btn);
+    let [reset] = useSound(resetbtn);
 const addCount = () => {
  if(count < 5 ){
     setCount(count +1); 
@@ -16,6 +18,7 @@ const addCount = () => {
 
 const resetCount = () => {
     setCount(0)
+    reset()
 }
 
 
