@@ -1,0 +1,55 @@
+.settings{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: transparent;
+    border: 3px solid aqua;
+    box-sizing: border-box;
+    border-radius: 10px;
+ padding: 25px;
+
+    h2{
+        margin:0;
+        padding:0;
+    }
+}
+
+.settings_input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 3px solid aqua;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding:25px;
+    .label {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+        white-space: nowrap;
+        input{
+            width:50%;
+            text-align: center;
+            padding-left: 15px;
+            border-radius: 3px;
+            border: solid 1px #61dafb ;
+        }
+
+
+    }
+}
+
+.setting_set{
+    border: 3px solid aqua;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 25px;
+
+
+}
+.error {
+    background:rgb(231, 55, 90);
+    border:solid 1px red;
+
+}

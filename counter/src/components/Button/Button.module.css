@@ -1,0 +1,13 @@
+.btn{
+    width: auto;
+    color:#282c34;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius:5px;
+    border:none;
+    background-color: aqua;
+}
+.btn:disabled{
+    background: #ccc;
+    opacity: 0.5;
+}

@@ -1,7 +1,7 @@
 .counter{
-   display: grid;
-   grid-template-rows: auto 1fr;
 
+display: flex;
+flex-direction: column;
 
 background-color: transparent;
 border: 3px solid aqua;
@@ -21,9 +21,10 @@ max-width: 20%;
 }
 
 .counter_block {
-display:grid;
-grid-template-rows: 1fr auto;
-grid-row-gap: 20px;
+
+display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 box-sizing: border-box;
 padding:25px;
 
@@ -33,7 +34,7 @@ padding:25px;
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
     border-radius: 5px;
     background: aqua;
     color:#282c34;
@@ -72,7 +73,27 @@ grid-column-gap: 30px;
     background: #ccc;
     opacity: 0.5;
   }
+.count_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: aqua;
+    color:#282c34;
 
+    font-weight: 700;
+    padding:30px 0;
+    font-size: 15px;
+}
   .count_red{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background: aqua;
+
+      font-size: 50px;
+      font-weight: 700;
+      padding:30px 0;
 color :rgb(231, 55, 90);
   }
