@@ -1,8 +1,9 @@
 import React from 'react';
 
 import s from "./CounterResult.module.css"
-import {Button} from "./Button/Button";
-import {Display} from "./Display/Display";
+import {Button} from "../Button/Button";
+import {Display} from "../Display/Display";
+import {ButtonGroup} from "@mui/material";
 
 type CounterResultType= {
     count:number
@@ -12,7 +13,7 @@ type CounterResultType= {
     nameButtonReset:string
     settings:boolean
     disabledReset :boolean
-    disabledInc:()=> boolean
+    disabledInc:boolean
     onClickInc:()=> void
     onClickReset:()=> void
     max:number
@@ -29,9 +30,10 @@ const CounterResult = (props:CounterResultType)=> {
                  error={props.error}/>
 
         <div className={s.count_controls}>
-            <Button name={props.nameButtonInc} disabled={props.settings ? props.disabledInc() : true}
+
+            <Button name={props.nameButtonInc} disabled={props.settings ? props.disabledInc: true}
                     onClick={props.onClickInc}/>
-            <Button name={props.nameButtonReset} disabled={props.settings ? props.disabledReset : true}
+            <Button name={props.nameButtonReset} disabled={props.disabledReset}
                     onClick={props.onClickReset}/>
 
         </div>
